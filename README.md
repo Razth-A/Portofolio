@@ -5,17 +5,21 @@
 ### To run this project locally, follow these steps:
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/Razth-A/Portofolio
+   git clone https://github.com/Razth-A/portofolio
    ```
+
 2. Navigate to the project directory:
    ```bash
    cd portofolio
    ```
-3. Install the dependencies:
+3. Install the dependencies:npm run dev
+
    ```bash
    npm install
    ```
+
 4. Start the development server:
    ```bash
    npm run dev

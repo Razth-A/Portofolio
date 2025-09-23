@@ -1,6 +1,6 @@
 ## Portfolio
 
-### This is a my portfolio build with Next.js, which include a hidden game within it.
+### This is a my portfolio, Ezra Athapaska.
 
 ### To run this project locally, follow these steps:
 

@@ -4,15 +4,15 @@ export const ContentCertification = () => {
   const certificates = [
     {
       name: "Sertifikat 1",
-      img: "/serti1.png",
+      img: "/images/serti1.png",
     },
     {
       name: "Sertifikat 2",
-      img: "/serti2.png",
+      img: "/images/serti2.png",
     },
     {
       name: "Sertifikat 3",
-      img: "/serti3.png",
+      img: "/images/serti3.png",
     },
   ];
 

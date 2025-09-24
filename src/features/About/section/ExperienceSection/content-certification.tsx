@@ -3,16 +3,20 @@ import Image from "next/image";
 export const ContentCertification = () => {
   const certificates = [
     {
-      name: "Sertifikat 1",
+      name: "Data Analystic - digitalent",
       img: "/images/serti1.jpg",
     },
     {
-      name: "Sertifikat 2",
+      name: "Multimedia development - Komsos",
       img: "/images/serti2.png",
     },
     {
-      name: "Sertifikat 3",
+      name: "Internship - PT Satria Corp",
       img: "/images/serti3.png",
+    },
+    {
+      name: "Optimasi SQL - Transpac",
+      img: "/images/serti4.png",
     },
   ];
 

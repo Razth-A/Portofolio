@@ -26,7 +26,6 @@ export const ContentCertification = () => {
         Certification
       </h3>
 
-      {/* Container scrollable horizontal */}
       <div className="scrollbar-thin scrollbar-thumb-accent/50 scrollbar-track-transparent flex gap-4 overflow-x-auto pb-5">
         {certificates.map((item, index) => (
           <div

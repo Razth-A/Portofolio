@@ -131,7 +131,7 @@ const projects = [
   {
     id: 4,
     name: "Movie",
-    desc: "This website is designed as a digital learning tool to introduce the art of wayang kulit to the public. The website features interactive 3D models of wayang kulit.",
+    desc: "This website is designed as a digital promotions horor movie to attract the audience interest in watching the movie in theaters.",
     image: movieGif,
     web: "https://razth-a.github.io/horror-movie/",
     repo: "https://github.com/Razth-A/horror-movie",
@@ -141,7 +141,7 @@ const projects = [
   {
     id: 5,
     name: "Primago App",
-    desc: "This website is designed as a digital learning tool to introduce the art of wayang kulit to the public. The website features interactive 3D models of wayang kulit.",
+    desc: "This application is designed for clients, specifically PT. Primadaya Group, to create several online job openings that the company will later use to find workers.",
     image: primagoGif,
     web: "https://play.google.com/store/apps/details?id=com.mobile.primago&hl=en-US&ah=-z33LP0qejb70hBM54YQvUkpPBo",
     repo: "https://github.com/Razth-A/mobile-app",

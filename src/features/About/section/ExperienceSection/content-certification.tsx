@@ -1,83 +1,47 @@
-import { useState } from "react";
+import Image from "next/image";
 
 export const ContentCertification = () => {
-  const [hover, setHover] = useState([]);
-
-  const vendorList = [
+  const certificates = [
     {
-      type: "Course",
-      name: "Digitalent",
-      link: "https://digitalent.komdigi.go.id",
-      certificate: [
-        {
-          name: "Data analytics",
-          link: "https://digitalent.komdigi.go.id/pelatihan/8183",
-        },
-      ],
+      name: "Sertifikat 1",
+      img: "/serti1.png",
     },
     {
-      type: "Course",
-      name: "Komsos",
-      link: "https://progate.com/",
-      certificate: [
-        {
-          name: "Multimedia Development Skills",
-          link: "https://drive.google.com/drive/folders/12iMZZ9NSfnUDItGhFmcgB3cRzqFOMIOW",
-        },
-      ],
+      name: "Sertifikat 2",
+      img: "/serti2.png",
     },
     {
-      type: "Course",
-      name: "Satria Corp",
-      link: "https://drive.google.com/drive/my-drive",
-      certificate: [
-        {
-          name: "Internship Certificate",
-          link: "https://drive.google.com/drive/my-drive",
-        },
-      ],
+      name: "Sertifikat 3",
+      img: "/serti3.png",
     },
   ];
 
   return (
-    <div className="cursor-default text-primary">
-      {vendorList.map((vendor, index) => {
-        return (
-          <div key={index}>
-            <h3 className="pb-3 text-lg font-medium leading-loose text-secondary md:text-xl">
-              {vendor.type}
-              <span className="text-base text-accent">
-                {" "}
-                @
-                <a
-                  href={vendor.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-underline"
-                >
-                  {vendor.name}
-                </a>
-              </span>
-            </h3>
-            <ul className="flex list-inside list-disc flex-col gap-4 pb-5 text-sm leading-relaxed lg:text-base">
-              {vendor.certificate.map((item, index) => {
-                return (
-                  <li key={index}>
-                    <a
-                      href={item.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="static  items-center justify-start transition-all duration-300 hover:text-accent md:inline-flex"
-                    >
-                      {item.name}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
+    <div className="text-primary">
+      <h3 className="pb-3 text-lg font-medium leading-loose text-secondary md:text-xl">
+        Certification
+      </h3>
+
+      {/* Container scrollable horizontal */}
+      <div className="scrollbar-thin scrollbar-thumb-accent/50 scrollbar-track-transparent flex gap-4 overflow-x-auto pb-5">
+        {certificates.map((item, index) => (
+          <div
+            key={index}
+            className="min-w-[280px] max-w-[320px] flex-shrink-0 rounded-xl border border-white/10 bg-gradient-to-br from-[#0f172a] to-[#1e293b] p-2 shadow-lg"
+          >
+            <Image
+              src={item.img}
+              alt={item.name}
+              width={600}
+              height={400}
+              className="rounded-lg object-cover"
+            />
+            <p className="mt-2 text-center text-sm text-secondary">
+              {item.name}
+            </p>
           </div>
-        );
-      })}
+        ))}
+      </div>
     </div>
   );
 };

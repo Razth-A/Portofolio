@@ -1,7 +1,11 @@
 "use client";
 import React from "react";
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
-import { TbBrandTelegram, TbBrandTiktok } from "react-icons/tb";
+import {
+  TbBrandTelegram,
+  TbBrandTiktok,
+  TbBrandWhatsapp,
+} from "react-icons/tb";
 
 export default function Contact() {
   const sosmeds = [
@@ -20,7 +24,14 @@ export default function Contact() {
       icon: <FiLinkedin size={20} />,
       link: "https://www.linkedin.com/in/ezra-athapaska-6b3152310/",
     },
+    {
+      name: "WhatsApp",
+      icon: <TbBrandWhatsapp size={20} />,
+      // ganti nomor di bawah sesuai punyamu
+      link: "https://wa.me/6288298605463",
+    },
   ];
+
   return (
     <div className="hidden lg:block">
       <div className="fixed bottom-0 left-0 w-[105px]">

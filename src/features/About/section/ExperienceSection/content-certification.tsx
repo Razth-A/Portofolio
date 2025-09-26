@@ -18,6 +18,10 @@ export const ContentCertification = () => {
       name: "Optimasi SQL - Transpac",
       img: "/images/serti4.png",
     },
+    {
+      name: "Optimasi SQL - Transpac",
+      img: "/images/serti5.png",
+    },
   ];
 
   return (

@@ -34,7 +34,7 @@ export const ContentCertification = () => {
                 fill
                 className="object-cover"
               />
-              {/* Eye Icon muncul saat hover */}
+
               <button
                 onClick={() => setSelected(item)}
                 className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition duration-300 group-hover:opacity-100"
@@ -71,10 +71,9 @@ export const ContentCertification = () => {
         ))}
       </div>
 
-      {/* Modal */}
       {selected && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 p-4"
           onClick={() => setSelected(null)}
         >
           <div
@@ -86,11 +85,11 @@ export const ContentCertification = () => {
               alt={selected.name}
               width={1200}
               height={800}
-              className="h-auto w-full rounded-xl"
+              className="h-auto w-full rounded-xl shadow-2xl"
             />
             <button
               onClick={() => setSelected(null)}
-              className="absolute top-2 right-2 rounded-full bg-white/20 p-2 text-white hover:bg-white/40"
+              className="absolute top-3 right-3 rounded-full bg-white p-2 text-black shadow-md hover:bg-gray-200"
             >
               ✕
             </button>

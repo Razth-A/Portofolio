@@ -21,6 +21,7 @@ export const ContentCertification = () => {
         Certification
       </h3>
 
+      {/* Grid Sertifikat */}
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {certificates.map((item, index) => (
           <div
@@ -34,7 +35,7 @@ export const ContentCertification = () => {
                 fill
                 className="object-cover"
               />
-
+              {/* Tombol View (Eye) */}
               <button
                 onClick={() => setSelected(item)}
                 className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition duration-300 group-hover:opacity-100"
@@ -71,13 +72,14 @@ export const ContentCertification = () => {
         ))}
       </div>
 
+      {/* Modal Fullscreen */}
       {selected && (
         <div
           className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 p-4"
           onClick={() => setSelected(null)}
         >
           <div
-            className="relative w-full max-w-4xl"
+            className="relative w-full max-w-4xl rounded-2xl bg-white p-4 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <Image
@@ -85,8 +87,10 @@ export const ContentCertification = () => {
               alt={selected.name}
               width={1200}
               height={800}
-              className="h-auto w-full rounded-xl shadow-2xl"
+              className="h-auto max-h-[80vh] w-full rounded-lg object-contain"
             />
+
+            {/* Tombol Close (Hitam) */}
             <button
               onClick={() => setSelected(null)}
               className="absolute top-3 right-3 rounded-full bg-white p-2 text-black shadow-md hover:bg-gray-200"

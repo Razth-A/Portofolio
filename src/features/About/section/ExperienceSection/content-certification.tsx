@@ -19,7 +19,7 @@ export const ContentCertification = () => {
       img: "/images/serti4.png",
     },
     {
-      name: "Optimasi SQL - Transpac",
+      name: "Overview of AI - Huawei",
       img: "/images/serti5.png",
     },
   ];

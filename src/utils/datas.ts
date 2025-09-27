@@ -48,7 +48,7 @@ import pinarak_resto from "@images/pinarak_resto.webp";
 import movieGif from "@gif/movie.gif";
 import KalaCeritaGif from "@gif/KalaCerita.gif";
 import primagoGif from "@gif/primago.gif";
-import notesGif from "@gif/notes.gif";
+import CarierGif from "@gif/Carier.gif";
 import abinawaGif from "@gif/abinawa.gif";
 import bookshelfGif from "@gif/bookshelf.gif";
 import sakurajapanGif from "@gif/sakura-japan.gif";
@@ -147,6 +147,16 @@ const projects = [
     repo: "https://github.com/Razth-A/mobile-app",
     stack: "HTML, Javascript, React Native, Expo, PHP, Laravel, MySQL",
     gif: primagoGif,
+  },
+  {
+    id: 6,
+    name: "Carier Space",
+    desc: "Coming Soon: Carier Space Website. A website that provides various job openings in real time and will be directly integrated with companies that are currently hiring.",
+    image: CarierGif,
+    web: "#",
+    repo: "#",
+    stack: "HTML, Javascript, PHP, TailwindCSS, MySQL",
+    gif: CarierGif,
   },
 ];
 

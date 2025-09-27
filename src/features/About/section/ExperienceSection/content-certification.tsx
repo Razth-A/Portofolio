@@ -8,6 +8,7 @@ export const ContentCertification = () => {
     { name: "Internship - PT Satria Corp", img: "/images/serti3.png" },
     { name: "Optimasi SQL - Transpac", img: "/images/serti4.png" },
     { name: "Overview of AI - Huawei", img: "/images/serti5.png" },
+    { name: "Computer Network - Huawei", img: "/images/serti6.png" },
   ];
 
   const [selected, setSelected] = useState<{
